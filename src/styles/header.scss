@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: $content-width;
+  max-width: $content-width;
 
   &__left {
     display: flex;

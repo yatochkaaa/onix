@@ -1,38 +1,8 @@
 .menu {
-  display: flex;
-  justify-content: center;
-  margin: 22px 0 32px;
   background-color: $main-color;
 
-  &__container {
-    display: flex;
+  &__nav {
+    max-width: 1050px;
     justify-content: space-between;
-    align-items: center;
-    width: $content-width;
-  }
-
-  &__main {
-    display: flex;
-
-    & .menu__link {
-      padding: 12px 36px;
-    }
-  }
-
-  &__right {
-    display: flex;
-
-    & .menu__link {
-      padding: 12px 25px;
-    }
-  }
-
-  &__link {
-    display: block;
-    transition: all $transition-duration;
-
-    &:hover {
-      background-color: #00b6f6;
-    }
   }
 }
