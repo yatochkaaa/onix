@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: $content-width;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 32px;
+  }
+
+  &__tagline {
+    margin-right: 22px;
+  }
+}
