@@ -1,0 +1,30 @@
+.contacts {
+  @include onMobile {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 4px;
+
+      @include onMobile {
+        margin-right: 8px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__itemIcon {
+    margin-right: 8px;
+
+    @include onMobile {
+      margin-right: 0;
+    }
+  }
+
+  &__itemText {
+    @include onMobile {
+      display: none;
+    }
+  }
+}

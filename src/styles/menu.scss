@@ -1,8 +1,56 @@
-.menu {
+.navbar {
+  display: flex;
+  justify-content: center;
   background-color: $main-color;
+  padding: 0;
+
+  & .navbar-toggler {
+    margin: 8px 0 8px 12px;
+  }
+
+  @include onTablet {
+    justify-content: space-between;
+  }
 
   &__nav {
     max-width: 1050px;
+    width: 95%;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    & .navbar__main .nav-link {
+      padding: 16px 36px;
+    }
+  }
+
+  &__main {
+    display: flex;
+  }
+
+  &__mainItem {
+    transition: $transition;
+    color: $white;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    & .dropdown-menu {
+      border-radius: 0%;
+      background-color: $main-color;
+
+      & .dropdown-item {
+        color: $white;
+
+        &:hover {
+          background-color: $hover-color;
+        }
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
   }
 }

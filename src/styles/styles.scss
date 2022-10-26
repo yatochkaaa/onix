@@ -1,6 +1,12 @@
 @import '_reset.scss';
 @import '_vars.scss';
+@import '_fonts.scss';
+@import 'mixins.scss';
+@import '_normilize.scss';
 
 @import 'logo.scss';
+@import 'icon.scss';
+@import 'span-color.scss';
 @import 'header.scss';
 @import 'menu.scss';
+@import 'contacts.scss';

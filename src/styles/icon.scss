@@ -1,0 +1,14 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+
+  @include onMobile {
+    width: 36px;
+    height: 36px;
+  }
+
+  &__phone {
+    background-color: #59bfe9;
+  }
+}

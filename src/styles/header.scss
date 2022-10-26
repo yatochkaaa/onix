@@ -2,11 +2,25 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding: 20px 0;
   max-width: $content-width;
+  width: 95%;
 
   &__left {
     display: flex;
     align-items: center;
+  }
+
+  &__logo {
+    margin-right: 20px;
+  }
+
+  &__company {
+    font-size: 20px;
+  }
+
+  &__companyItem:not(:last-child) {
+    margin-bottom: 4px;
   }
 
   &__right {
@@ -14,11 +28,16 @@
     align-items: center;
   }
 
-  &__logo {
-    margin-right: 32px;
+  &__tagline {
+    margin-right: 20px;
+    font-size: 20px;
+
+    @include onTablet {
+      display: none;
+    }
   }
 
-  &__tagline {
-    margin-right: 22px;
+  &__taglineItem:not(:last-child) {
+    margin-bottom: 4px;
   }
 }
